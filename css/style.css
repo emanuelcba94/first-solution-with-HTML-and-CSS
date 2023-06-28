@@ -1,6 +1,7 @@
 :root {
     /* Primary */
     --clr-dark-cyan: hsl(158, 36%, 37%);
+    --clr-more-dark-cyan: hsl(158, 36%, 17%);
     --clr-cream: hsl(30, 38%, 92%);
     /* Neutral */
     --clr-very-dark-blue: hsl(212, 21%, 14%);
@@ -98,6 +99,7 @@ body {
 }
 
 .product__btn {
+    cursor: pointer;
     background-color: var(--clr-dark-cyan);
     color: var(--clr-white);
     font-weight: 600;
@@ -107,6 +109,10 @@ body {
     align-items: center;
     padding: 15px;
     gap: 10px;
+}
+
+.product__btn:active {
+    background-color: var(--clr-more-dark-cyan);
 }
 
 /* footer */
